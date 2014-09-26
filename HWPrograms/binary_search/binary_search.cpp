@@ -19,7 +19,8 @@ using namespace std;
  * @param int& first - index of array to begin searching at
  * @param int& last - index of array to end search at
  */
-int binarySearch(int list[], const int& item, int& first, int& last) {
+ template<typename T>
+int binarySearch(T list[], const T& item, T& first, T& last) {
 	
 	// If "first" index is greater than "last" index, there are no elements to 
 	// compare against and element was not found in the list. Indicate so by
@@ -53,7 +54,8 @@ int binarySearch(int list[], const int& item, int& first, int& last) {
 /*
  * Purpose: iterative binary search
  */
-int binSearch(int list[], const int& item, int& first, int& last) {
+template <typename T>
+int binSearch(T list[], const T& item, T& first, T& last) {
 
 	int mid;
 	int idx = -1;
